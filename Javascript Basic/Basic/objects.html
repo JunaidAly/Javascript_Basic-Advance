@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>BioGraphy</title>
+
+</head>
+<body>
+    
+    <script>
+
+        
+    var person = {
+
+        FirstName : "Junaid ",
+        LastName : "Ali",
+        Registration_No : "FA20-BCS-008",
+        FatherName : "Noor Ali",
+        Semester : "BCS - 6B",
+        Department : "Computer Science",
+        Address : {House_No :'02' ,Street_No :'03' ,Colony : 'Farooq -e- Azam' ,City : 'Attock'},
+
+        Display : function (){
+            return "First Name: "+this.FirstName +"<br>"+"Last Name: "+this.LastName+"<br>"+"Registration Number: "+
+            this.Registration_No+"<br>"+"Father name : "+this.FatherName+"<br>"+"Semester: "+this.Semester+
+            "<br>"+"Department : "+this.Department+"<br>"+"Address : "+"House No : "+this.Address.House_No+", "+
+            "Street No: "+this.Address.Street_No+", "+"Colony : "+this.Address.Colony+", "+"City : "+this.Address.City;
+        
+        }
+    };
+    var data = person.Display();
+     document.write(data);
+    
+    
+  
+    </script>
+    
+</body>
+</html>
